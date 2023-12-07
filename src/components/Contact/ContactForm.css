@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 20px 10px;
+    width: 100%;
+  }
+  
+  .success-message,
+  .error-message {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  
+  form {
+    background-color: aqua;
+    padding: 20px 15px;
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  form div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  input,
+  textarea {
+    min-width: 87%;
+    outline: none;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    font-size: 13px;
+  }
+  
+  label {
+    font-weight: 600;
+    width: 58px;
+  }
+  
+  button {
+    padding: 8px;
+    width: 100px;
+    margin: auto;
+    background-color: orange;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  @media screen and (min-width: 520px) {
+    body {
+      padding: 20px;
+    }
+  
+    form div {
+      font-size: 16px;
+      justify-content: space-between;
+    }
+  
+    input,
+    textarea {
+      display: flex;
+      font-size: 16px;
+      min-width: 83%;
+    }
+  
+    label {
+      display: flex;
+      width: 75px;
+    }
+  }
+  
+  @media screen and (min-width: 560px) {
+    form {
+      max-width: 76%;
+    }
+  
+    input,
+    textarea {
+      min-width: 77%;
+    }
+  
+    label {
+      margin-left: 15px;
+    }
+  }
+  
+  @media screen and (min-width: 1000px) {
+    form {
+      max-width: 50%;
+    }
+    input,
+    textarea {
+      min-width: 80%;
+    }
+  }
